@@ -45,6 +45,9 @@
         <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
+            <version1.16.16</version>
+            <scope>provided</scope>
+
         </dependency>
         <dependency>
             <groupId>mysql</groupId>
@@ -73,7 +76,7 @@
             <plugin>
                 <groupId>com.spotify</groupId>
                 <artifactId>docker-maven-plugin</artifactId>
-                <version>0.2.3</version>
+                <version>${docker.plugin.version}</version>
                 <executions>
                     <execution>
                         <phase>package</phase>
